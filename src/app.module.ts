@@ -22,7 +22,7 @@ import { TodoModule } from './todo/todo.module';
         password: configService.get("DATABASE_PASSWORD"),
         synchronize: configService.get<boolean>("DATABASE_SYNC"),
         logging: configService.get<boolean>("DATABASE_LOGGING"),
-        entities: [__dirname+'/**/*entity[.ts, .js'],
+        entities: [__dirname+'/**/*.entity.js'],
       })
     }),
     UserModule,
